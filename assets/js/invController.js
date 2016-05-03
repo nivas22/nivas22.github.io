@@ -1,7 +1,7 @@
 z.controller('contentControl',function($scope,$translate,$rootScope){
 	$scope.name ="dsfdsf";
 	//$translateProvider.preferredLanguage('en');
-	$translate.use('tn');
+	$translate.use('en');
 	$scope.Hero_Name =$translate.instant("Hero_Name");
       $scope.Heroine_Name=$translate.instant("Heroine_Name");
       $scope.Label_Fun=$translate.instant("Label_Fun");

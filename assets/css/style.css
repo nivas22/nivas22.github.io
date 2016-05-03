@@ -1186,6 +1186,7 @@ background: #00aaff;
 	    text-align: center;
     top: -33px;
     position: relative;
+    margin-top: 5px;
 }
 .language-selection ul li {
 	list-style: none;
@@ -1202,6 +1203,8 @@ background: #00aaff;
 	.language-selection{
 	float:left;
 	margin-right: 10px;
+	z-index: 99999;
+	margin-top: 15px;
 	  
 }
 }
