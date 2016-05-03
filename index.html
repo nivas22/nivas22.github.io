@@ -24,7 +24,7 @@
 	<![endif]-->
 
 </head>
-<body>
+<body ng-app='invApp' ng-controller = 'contentControl'>
 
 
 	<!-- Preloader -->
@@ -72,17 +72,24 @@
 	<!-- Page Top Section -->
 	<section id="page-top" class="section-style" data-background-image="images/background/page-top.jpg">
 		<div class="pattern height-resize">
+		<div class="language-selection">
+		<ul><li ng-click="changeLanguage('tn')">Tamil</li>
+		<li ng-click="changeLanguage('en')">English</li>
+		<li ng-click="changeLanguage('ml')">Malayalam</li></ul></div>
 			<div class="container">
+			
 				<h2 class="site-title">
-					மந்திரம் - கோமதி 
+					மந்திரம் - கோமதி {{Hero_Name}} - {{Heroine_Name}}
+				
+				
 				</h2><!-- /.site-title -->
 				<h3 class="section-name">
 					<span>
-					மணவிழா
+					மணவிழா  {{Label_Fun}}
 					</span>
 				</h3><!-- /.section-name -->
 				<h3 class="section-title">
-					வாழ்த்துவோம் வாங்க...!
+					வாழ்த்துவோம் வாங்க...! {{Top_Quote}}
 				</h3><!-- /.Section-title  -->
 				<div id="time_countdown" class="time-count-container">
 
@@ -157,14 +164,14 @@
 			<div class="container">
 				<h3 class="section-name">
 					<span>
-						மணமக்கள்
+						மணமக்கள் {{Second_Heading}}
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					நாங்க தான்
+					நாங்க தான் {{Line_One}}
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
-					கல்யாணம் எங்களுக்கு தான்..!
+					கல்யாணம் எங்களுக்கு தான்..! {{Sub_Quote}}
 				</p><!-- /.section-description -->
 
 				<div class="team-container">
@@ -174,9 +181,9 @@
 								<figure>
 									<img src="images/team/team-member-1.jpg" alt="Team Member">
 									<figcaption>
-										<p class="member-name">மந்திரம்</p>
+										<p class="member-name">மந்திரம் {{Hero_Name}}</p>
 										<p class="designation">
-											நாயகன்
+											நாயகன் {{Label_Hero}}
 										</p><!-- /.designation -->
 
 									</figcaption>
@@ -192,10 +199,10 @@
 									<img src="images/team/team-member-2.jpg" alt="Team Member">
 									<figcaption>
 										<p class="member-name">
-											மண நாள் 
+											மண நாள் {{Label_Day}}
 										</p><!-- /.member-name -->
 										<p class="designation">
-											மே 16 
+											மே 16  {{Mrg_Day}}
 										</p><!-- /.designation -->
 
 									</figcaption>
@@ -211,10 +218,10 @@
 									<img src="images/team/team-member-3.jpg" alt="Team Member">
 									<figcaption>
 										<p class="member-name">
-											கோமதி
+											கோமதி {{Heroine_Name}}
 										</p><!-- /.member-name -->
 										<p class="designation">
-											நாயகி 
+											நாயகி  {{Label_Heroine}}
 										</p><!-- /.designation -->
 
 									</figcaption>
@@ -245,13 +252,13 @@
 			<div class="container">
 				<h3 class="section-name">
 					<span>
-						அழைப்பிதழ்
+						அழைப்பிதழ் {{Label_Invitaiton}}
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					உங்களுக்கு தான்...!  
+					உங்களுக்கு தான்...!   {{Labe_U}}
 				</h2><!-- /.Section-title  -->
-				<p class="section-description">
+				<p class="section-description">{{Label_Description}}
 			    இந்த மே மாசம் 16ஆம் தேதி திங்ககிழம காலையிலே 9 மணிக்கு மேல 10 மணிக்குள்ள எங்களுக்கு கல்யாணம். 
                        சாயும்காலம் 6 மணில இருந்து 8 மணிக்குள்ள வரவேற்ப்பு நடக்கபோகுது.				
 				பாசமா கூப்பிடுறோம். குடும்பமா வாங்க. வாழ்த்துக்களையும் ஆசிகளையும் தாங்க.
@@ -304,12 +311,12 @@
 				<div class="container">
 					<h3 class="section-name">
 						<span>
-							முகவரி
+							முகவரி {{Label_Address}}
 						</span>
 					</h3><!-- /.section-name -->
 					<!-- /.Section-title  -->
 					<h3 class="section-description">
-					JPR திருமண மண்டபம், <Br> பாளையங்கோட்டை,<br>திருநெல்வேலி.					
+					JPR திருமண மண்டபம்,{{Label_venue}} <Br> பாளையங்கோட்டை,{{Label_Location}}<br>திருநெல்வேலி.	{{Label_District}}				
 					</h3><!-- /.section-description -->
 
 							
@@ -343,6 +350,12 @@
 		<script type="text/javascript" src="assets/js/functions.js"></script>
 		<!-- Custom JavaScript Functions -->
 		<script type="text/javascript" src="assets/js/jquery.ajaxchimp.min.js"></script>
+		<script type="text/javascript" src="assets/js/angular.js"></script>
+		<script type="text/javascript" src="assets/js/angular-translate.js"></script>
+
+		<script type="text/javascript" src="assets/js/app.js"></script>
+		<script type="text/javascript" src="assets/js/language.js"></script>
+		<script type="text/javascript" src="assets/js/invController.js"></script>
 
 	</body>
 	</html>
