@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='invApp' ng-controller = 'contentControl'>
 <head>
 	<meta charset="UTF-8">
-	<title>	மந்திரம் கோமதி திருமணம்</title>
-	<meta name="description" content="Kite Coming Soon HTML Template by Jewel Theme" >
-	<meta name="author" content="Jewel Theme">
+	<title> {{Title}} </title>
+	
 
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +23,7 @@
 	<![endif]-->
 
 </head>
-<body ng-app='invApp' ng-controller = 'contentControl'>
+<body >
 
 
 	<!-- Preloader -->
@@ -59,10 +58,10 @@
 		<nav class="collapse navbar-collapse">
 			<!-- Main navigation -->
 			<ul id="headernavigation" class="nav navbar-nav">
-				<li class="active"><a href="#page-top">முகப்பு</a></li>	
-				<li><a href="#about">மணமக்கள்</a></li>	
-				<li><a href="#subscribe">அழைப்பிதழ்</a></li>	
-				<li><a href="#contact">முகவரி</a></li>	
+				<li class="active"><a href="#page-top">{{H1}}</a></li>	
+				<li><a href="#about">{{H2}}</a></li>	
+				<li><a href="#subscribe">{{H3}}</a></li>	
+				<li><a href="#contact">{{H4}}</a></li>	
 				<!-- <li><a href="" ng-click="changeLanguage('tn')">Tamil</a></li>
 				<li><a href="" ng-click="changeLanguage('en')">English</a></li>
 				<li><a href="" ng-click="changeLanguage('ml')">Malayalam</a></li> -->	
@@ -76,9 +75,9 @@
 	<section id="page-top" class="section-style" data-background-image="images/background/page-top.jpg">
 		<div class="pattern height-resize">
 		<div class="language-selection">
-		<ul><li ng-click="changeLanguage('tn')">Tamil</li>
-		<li ng-click="changeLanguage('en')">English</li>
-		<li ng-click="changeLanguage('ml')">Malayalam</li></ul></div>
+		<ul><li ng-click="changeLanguage('tn')" ng-class="{'selected':selecTamil}">தமிழ்</li>
+		<li ng-click="changeLanguage('en')" ng-class="{'selected':selecEnglish}">English</li>
+		<li ng-click="changeLanguage('ml')" ng-class="{'selected':selecMal}">Malayalam</li></ul></div>
 			<div class="container">
 			
 				<h2 class="site-title">
@@ -259,7 +258,7 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					   {{Labe_U}}..!
+					   {{Labe_U}}
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">{{Label_Description}}
 			   <!--  இந்த மே மாசம் 16ஆம் தேதி திங்ககிழம காலையிலே 9 மணிக்கு மேல 10 மணிக்குள்ள எங்களுக்கு கல்யாணம். 
@@ -319,9 +318,15 @@
 					</h3><!-- /.section-name -->
 					<!-- /.Section-title  -->
 					<h3 class="section-description">
-					{{Label_venue}}, <Br>{{Label_Location}},<br>	{{Label_District}}.				
+					{{Label_venue}}
 					</h3><!-- /.section-description -->
+					
+					<h4 class="section-description">
+					<Br>{{Label_Location}}
+					<br>{{Label_District}}.	
+					</h4><!-- /.section-description -->
 
+					
 							
 
 					<div class="next-section">
@@ -338,7 +343,9 @@
 
 		<!-- Footer Section -->
 		<footer id="footer-section">
-			
+			<p class="copyright">
+			{{Footer}}
+			</p>
 		</footer>
 		<!-- Footer Section End -->
 

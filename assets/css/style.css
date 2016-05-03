@@ -110,7 +110,7 @@ a:focus{
 	text-align:center;
 	text-transform:uppercase;
 	font-weight:300;
-	font-size:60px;
+	font-size:30px;
 }
 .section-description{
 	font-weight:300;
@@ -464,7 +464,7 @@ a:focus{
 ---------------------------------------------------------------------- */
 .site-title{
 	text-align:center;
-	font-size:45px;
+	font-size:35px;
 	font-family:'Pacifico';
 	margin:0 0 50px 0;
 	padding-bottom:15px;
@@ -491,8 +491,8 @@ a:focus{
 	content:none;
 }
 .time-count-container{
-	min-height:300px;
-	margin-top:50px;
+	min-height:322px;
+	/*margin-top:50px;*/
 }
 .time-box{
 	width:150px;
@@ -526,7 +526,7 @@ a:focus{
 	        transform:rotate(-45deg);
 }
 .time-number{
-	font-size:65px;
+	font-size:58px;
 	width:100%;
 	display:inline-block;
 	font-weight:300;
@@ -1197,6 +1197,10 @@ background: #00aaff;
     cursor: pointer;
     margin-bottom: 2px;
     display: inline-block;
+}
+.selected{
+background: white;
+color:black;
 }
 
 @media screen and (max-width: 992px){
