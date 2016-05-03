@@ -62,7 +62,10 @@
 				<li class="active"><a href="#page-top">முகப்பு</a></li>	
 				<li><a href="#about">மணமக்கள்</a></li>	
 				<li><a href="#subscribe">அழைப்பிதழ்</a></li>	
-				<li><a href="#contact">முகவரி</a></li>		
+				<li><a href="#contact">முகவரி</a></li>	
+				<li><a href="" ng-click="changeLanguage('tn')">Tamil</a></li>
+				<li><a href="" ng-click="changeLanguage('en')">English</a></li>
+				<li><a href="" ng-click="changeLanguage('ml')">Malayalam</a></li>	
 			</ul> <!-- /.nav .navbar-nav -->
 		</nav> <!-- /.navbar-collapse  -->
 	</div><!-- /#main-menu -->
@@ -72,24 +75,24 @@
 	<!-- Page Top Section -->
 	<section id="page-top" class="section-style" data-background-image="images/background/page-top.jpg">
 		<div class="pattern height-resize">
-		<div class="language-selection">
+		<!-- <div class="language-selection">
 		<ul><li ng-click="changeLanguage('tn')">Tamil</li>
 		<li ng-click="changeLanguage('en')">English</li>
-		<li ng-click="changeLanguage('ml')">Malayalam</li></ul></div>
+		<li ng-click="changeLanguage('ml')">Malayalam</li></ul></div> -->
 			<div class="container">
 			
 				<h2 class="site-title">
-					மந்திரம் - கோமதி {{Hero_Name}} - {{Heroine_Name}}
+					 {{Hero_Name}} - {{Heroine_Name}}
 				
 				
 				</h2><!-- /.site-title -->
 				<h3 class="section-name">
 					<span>
-					மணவிழா  {{Label_Fun}}
+					  {{Label_Fun}}
 					</span>
 				</h3><!-- /.section-name -->
 				<h3 class="section-title">
-					வாழ்த்துவோம் வாங்க...! {{Top_Quote}}
+					  {{Top_Quote}}..!
 				</h3><!-- /.Section-title  -->
 				<div id="time_countdown" class="time-count-container">
 
@@ -164,14 +167,14 @@
 			<div class="container">
 				<h3 class="section-name">
 					<span>
-						மணமக்கள் {{Second_Heading}}
+						 {{Second_Heading}}
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					நாங்க தான் {{Line_One}}
+					 {{Line_One}}
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
-					கல்யாணம் எங்களுக்கு தான்..! {{Sub_Quote}}
+					 {{Sub_Quote}}..!
 				</p><!-- /.section-description -->
 
 				<div class="team-container">
@@ -181,9 +184,9 @@
 								<figure>
 									<img src="images/team/team-member-1.jpg" alt="Team Member">
 									<figcaption>
-										<p class="member-name">மந்திரம் {{Hero_Name}}</p>
+										<p class="member-name"> {{Hero_Name}}</p>
 										<p class="designation">
-											நாயகன் {{Label_Hero}}
+											 {{Label_Hero}}
 										</p><!-- /.designation -->
 
 									</figcaption>
@@ -199,10 +202,10 @@
 									<img src="images/team/team-member-2.jpg" alt="Team Member">
 									<figcaption>
 										<p class="member-name">
-											மண நாள் {{Label_Day}}
+											  {{Label_Day}}
 										</p><!-- /.member-name -->
 										<p class="designation">
-											மே 16  {{Mrg_Day}}
+											  {{Mrg_Day}}
 										</p><!-- /.designation -->
 
 									</figcaption>
@@ -218,10 +221,10 @@
 									<img src="images/team/team-member-3.jpg" alt="Team Member">
 									<figcaption>
 										<p class="member-name">
-											கோமதி {{Heroine_Name}}
+											 {{Heroine_Name}}
 										</p><!-- /.member-name -->
 										<p class="designation">
-											நாயகி  {{Label_Heroine}}
+											  {{Label_Heroine}}
 										</p><!-- /.designation -->
 
 									</figcaption>
@@ -252,17 +255,17 @@
 			<div class="container">
 				<h3 class="section-name">
 					<span>
-						அழைப்பிதழ் {{Label_Invitaiton}}
+						 {{Label_Invitaiton}}
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					உங்களுக்கு தான்...!   {{Labe_U}}
+					   {{Labe_U}}..!
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">{{Label_Description}}
-			    இந்த மே மாசம் 16ஆம் தேதி திங்ககிழம காலையிலே 9 மணிக்கு மேல 10 மணிக்குள்ள எங்களுக்கு கல்யாணம். 
+			   <!--  இந்த மே மாசம் 16ஆம் தேதி திங்ககிழம காலையிலே 9 மணிக்கு மேல 10 மணிக்குள்ள எங்களுக்கு கல்யாணம். 
                        சாயும்காலம் 6 மணில இருந்து 8 மணிக்குள்ள வரவேற்ப்பு நடக்கபோகுது.				
 				பாசமா கூப்பிடுறோம். குடும்பமா வாங்க. வாழ்த்துக்களையும் ஆசிகளையும் தாங்க.
-					<br><br><b>ஓட்டுப்போடவும் மறந்துராதீங்க.</b>
+					<br><br><b>ஓட்டுப்போடவும் மறந்துராதீங்க.</b> -->
 				</p><!-- /.section-description -->
 
 				<!-- /.news-letter -->
@@ -311,12 +314,12 @@
 				<div class="container">
 					<h3 class="section-name">
 						<span>
-							முகவரி {{Label_Address}}
+							 {{Label_Address}}
 						</span>
 					</h3><!-- /.section-name -->
 					<!-- /.Section-title  -->
 					<h3 class="section-description">
-					JPR திருமண மண்டபம்,{{Label_venue}} <Br> பாளையங்கோட்டை,{{Label_Location}}<br>திருநெல்வேலி.	{{Label_District}}				
+					{{Label_venue}}, <Br>{{Label_Location}},<br>	{{Label_District}}.				
 					</h3><!-- /.section-description -->
 
 							

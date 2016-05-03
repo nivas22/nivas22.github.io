@@ -2,7 +2,7 @@ z.controller('contentControl',function($scope,$translate,$rootScope){
 	$scope.name ="dsfdsf";
 	//$translateProvider.preferredLanguage('en');
 	$translate.use('tn');
-	/*$scope.Hero_Name =$translate.instant("Hero_Name");
+	$scope.Hero_Name =$translate.instant("Hero_Name");
       $scope.Heroine_Name=$translate.instant("Heroine_Name");
       $scope.Label_Fun=$translate.instant("Label_Fun");
       $scope.Top_Quote=$translate.instant("Top_Quote");
@@ -20,9 +20,9 @@ z.controller('contentControl',function($scope,$translate,$rootScope){
       $scope.Label_Address =$translate.instant("Label_Address");
      $scope.Label_venue  =$translate.instant("Label_venue");
      $scope.Label_Location =$translate.instant("Label_Location");
-     $scope.Label_District=$translate.instant("Label_District");*/
+     $scope.Label_District=$translate.instant("Label_District");
 	$scope.changeLanguage = function(tag){
-		alert(tag);
+		//alert(tag);
 		$translate.use(tag);
 		$scope.Hero_Name =$translate.instant("Hero_Name");
       $scope.Heroine_Name=$translate.instant("Heroine_Name");
@@ -45,7 +45,7 @@ z.controller('contentControl',function($scope,$translate,$rootScope){
      $scope.Label_District=$translate.instant("Label_District");
 		
 	};
-	 $rootScope.$on('$translateChangeSuccess', function(event, data) {
+	/* $rootScope.$on('$translateChangeSuccess', function(event, data) {
       alert('change success');
-    });
+    });*/
 });

@@ -30,7 +30,7 @@ z.constant('languages',{
     return english;
   },
 
-  {
+  
   ml: function() {
     var malayalam = {
 
