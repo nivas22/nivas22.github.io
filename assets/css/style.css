@@ -43,6 +43,9 @@ Tags: HTML, Template, Coming Soon, Kite
 ---------------------------------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700);
+@import url(http://fonts.googleapis.com/earlyaccess/droidsanstamil.css);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
 /* 1 - Import Google Font End 
 ---------------------------------------------------------------------- */
 
@@ -462,6 +465,9 @@ a:focus{
 
 /* 4 - Page Top Section 
 ---------------------------------------------------------------------- */
+.section-title{
+	font-family:'Lobster';
+}
 .site-title{
 	text-align:center;
 	font-size:45px;
