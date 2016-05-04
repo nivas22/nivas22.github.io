@@ -25,7 +25,7 @@ z.constant('languages',{
       'Mrg_Day': 'May 16',
       'Label_Invitaiton': 'Invitation',
       'Labe_U': 'For U Only',
-      'Label_Description': 'marriage date and further',
+      'Label_Description': 'We are getting married together in the presence of our parents and with joyful hearts.You are invited to share in the happiness as we join our lives in marriage on Monday,16 th May 2016 between 9.00 a.m and 10.00 a.m.',
       'Label_Address' : 'Address',
       'Label_venue'  :  'JPR Marriage Hall',
       'Label_Location' : 'Palayamkottai',
@@ -86,7 +86,7 @@ z.constant('languages',{
       'Hero_Name': 'மந்திரம்',
       'Heroine_Name':'கோமதி',
       'Label_Fun': 'மணவிழா',
-      'Top_Quote': 'அவன் வானவில்லாக,அவள் வண்ண நிழலாக கைகோர்க்கும் நேரம்', //'வாழ்த்துவோம் வாங்க',
+      'Top_Quote': 'அவன் வானவில்லாக, அவள் வண்ண நிழலாக கைகோர்க்கும் நேரம்', //'வாழ்த்துவோம் வாங்க',
 
       'Second_Heading': 'மணமக்கள்',
       'Line_One':'நாங்க தான்',
