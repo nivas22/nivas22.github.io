@@ -18,7 +18,7 @@ z.constant('languages',{
 
       'Second_Heading': 'Groom & Bride',
       'Line_One':'We Are Getting Married',
-      'Sub_Quote': 'together with their parents and with joyful hearts invite you to share in the happiness as they join their lives in marriage on Monday, 16th May 2016 between 9.00 a.m and 10.00 a.m',
+      'Sub_Quote': ' “Where there is love there is life.”',
       'Label_Hero': 'Hero',
       'Label_Heroine': 'Heroine',
       'Label_Day': 'Marriage Date',
