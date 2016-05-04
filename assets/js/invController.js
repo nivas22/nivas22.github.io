@@ -2,6 +2,16 @@ z.controller('contentControl',function($scope,$translate,$rootScope){
 	$scope.name ="dsfdsf";
 	//$translateProvider.preferredLanguage('en');
 	$translate.use('en');
+	$scope.selecTamil =false;
+	$scope.selecEnglish = true;
+	$scope.selecMal =false;
+	
+	$scope.Title =$translate.instant("Title");
+	$scope.H1 =$translate.instant("H1");
+	$scope.H2 =$translate.instant("H2");
+	$scope.H3 =$translate.instant("H3");
+	$scope.H4 =$translate.instant("H4");
+	
 	$scope.Hero_Name =$translate.instant("Hero_Name");
       $scope.Heroine_Name=$translate.instant("Heroine_Name");
       $scope.Label_Fun=$translate.instant("Label_Fun");
@@ -21,9 +31,26 @@ z.controller('contentControl',function($scope,$translate,$rootScope){
      $scope.Label_venue  =$translate.instant("Label_venue");
      $scope.Label_Location =$translate.instant("Label_Location");
      $scope.Label_District=$translate.instant("Label_District");
+	 $scope.Footer=$translate.instant("Footer");
 	$scope.changeLanguage = function(tag){
 		//alert(tag);
+		$scope.selecTamil =false;
+	$scope.selecEnglish = false;
+	$scope.selecMal =false
 		$translate.use(tag);
+		if(tag === 'en'){
+		$scope.selecEnglish = true;
+			}else if (tag ==='tn'){
+			$scope.selecTamil =true;
+			}
+		else{
+		$scope.selecMal =true
+		}
+		$scope.Title =$translate.instant("Title");
+	$scope.H1 =$translate.instant("H1");
+	$scope.H2 =$translate.instant("H2");
+	$scope.H3 =$translate.instant("H3");
+	$scope.H4 =$translate.instant("H4");
 		$scope.Hero_Name =$translate.instant("Hero_Name");
       $scope.Heroine_Name=$translate.instant("Heroine_Name");
       $scope.Label_Fun=$translate.instant("Label_Fun");
@@ -43,8 +70,9 @@ z.controller('contentControl',function($scope,$translate,$rootScope){
      $scope.Label_venue  =$translate.instant("Label_venue");
      $scope.Label_Location =$translate.instant("Label_Location");
      $scope.Label_District=$translate.instant("Label_District");
-		
+	$scope.Footer=$translate.instant("Footer");	
 	};
+	
 	/* $rootScope.$on('$translateChangeSuccess', function(event, data) {
       alert('change success');
     });*/
